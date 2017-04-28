@@ -14,20 +14,20 @@ import java.util.List;
 /*
  * Created by Christian Pruvost on 16/04/2017.
  */
-public class RSSFeedParser {
+class RSSFeedParser {
 
-    public static final String TAG = RSSFeedParser.class.getName();
+    private static final String TAG = RSSFeedParser.class.getName();
 
-    public static final String DEFAULT_ENCODING = "utf-8";
-    public static final String ITEM = "item";
-    public static final String CHANNEL = "channel";
-    public static final String TITLE = "title";
-    public static final String LINK = "link";
-    public static final String DESCRIPTION = "description";
-    //public static final String CATEGORY = "category";
-    public static final String PUBDATE = "pubDate";
-    //public static final String GUID = "guid";
-    //public static String urlString = "";
+    private static final String DEFAULT_ENCODING = "utf-8";
+    private static final String ITEM = "item";
+    private static final String CHANNEL = "channel";
+    private static final String TITLE = "title";
+    private static final String LINK = "link";
+    private static final String DESCRIPTION = "description";
+    //private static final String CATEGORY = "category";
+    private static final String PUBDATE = "pubDate";
+    //private static final String GUID = "guid";
+    //private static String urlString = "";
 
 
     //private String feedTitle = "";
@@ -80,8 +80,8 @@ public class RSSFeedParser {
                             parent++;
                         } else if (name.equalsIgnoreCase(TITLE)) {
                             /* Handle the main feed / item title based on depth
-                             * depth = 1 is part of the main feed title
-                             * depth = 2 is the title of the item in the RSS feed
+                             * parent = 1 is part of the main feed title
+                             * parent = 2 is the title of the item in the RSS feed
                              * <channel>
                              *     <title></title>
                              *     <link></link>
@@ -153,6 +153,6 @@ public class RSSFeedParser {
 
         return items;
 
-        // remember to handle name == null
+        // TODO: remember to handle name == null
     }
 }

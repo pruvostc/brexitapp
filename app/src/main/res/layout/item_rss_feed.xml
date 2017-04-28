@@ -2,12 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/shape">
 
     <TextView
         android:id="@+id/pubdateText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:textColor="#3db75d"/>
 
     <TextView
         android:id="@+id/titleText"
@@ -29,8 +33,8 @@
         android:autoLink="web"
         android:linksClickable="true"/>
 
-    <View
+    <!--View
         android:layout_width="match_parent"
         android:layout_height="3dp"
-        android:background="@color/colorAccent" />
+        android:background="@color/lineSeparator" /-->
 </LinearLayout>

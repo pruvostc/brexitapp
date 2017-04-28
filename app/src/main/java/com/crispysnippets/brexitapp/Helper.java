@@ -8,7 +8,7 @@ import android.text.Spanned;
 /**
  * This Class is to ensure support for older versions of android when required.
  */
-public class Helper {
+class Helper {
 
 
     /**

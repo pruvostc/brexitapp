@@ -4,7 +4,7 @@ package com.crispysnippets.brexitapp;
  * Created by Christian Pruvost on 16/04/2017.
  */
 
-public class RssFeedModel {
+class RssFeedModel {
 
     /* The title of the Item in the RSS feed */
     private String title;
